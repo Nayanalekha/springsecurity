@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarala login</title>
+</head>
+<body bgcolor="blue">
+<div th :if="${param.error}">
+    <h3>The user nam and password mentioned are incorrect</h3>
+</div>
+<div th : if="${param.logout}">
+    <h3>The user has been log out</h3>
+</div>
+<form action="sarala" onsubmit="myFunction()">
+    <div><label> Customer Name : <input type="text" name="username" id = "inputId"/></label></div>
+    <div><label> Password : <input type="password" name="password"/></label></div>
+    <div><input type="submit" value="Login" /></div>
+</form>
+
+<script>
+function myFunction() {
+
+  alert("Welcome to the Sarala Fashions you have registered successfully...");
+}
+</script>
+
+
+</body>
+</html>
